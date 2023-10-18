@@ -1,0 +1,27 @@
+{
+  "name": "react-chakraui-node-boilerplate-clck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "boot.js",
+  "scripts": {
+    "go": "npm run serve && (cd client && npm start)",
+    "i": "(cd client && yarn) && yarn",
+    "serve": "nodemon boot.js",
+    "load": "cd client && npm run build && cd .. && rsync  -a ./client/build ./server"
+  },
+  "author": "Kyle Van Bergen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2",
+    "vhost": "^3.0.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}
